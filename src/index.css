@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    text-decoration: none;
+}
+body{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  height: 100vh;
+  background-color: #313131;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.calculator{
+  width: 100%;
+  min-width: 400px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding: 20px;
+}
+.display{
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, .8);
+  color: aliceblue;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  text-align: right;
+}
+.display > span {
+  color: grey;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+}
+button{
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  color: black;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.operators {
+  margin-top: 0.5rem;
+  display: flex;
+  
+}
+.operators button {
+  flex: 1 1 0%;
+  background-color: skyblue;
+}
+
+.digits {
+  display: flex;
+  flex-wrap: wrap;
+}
+.digits button {
+  flex: 1 1 27.8%;
+  max-width: 33.33%;
+  background-color:  rgba(0, 0, 0, .8);
+  color: aliceblue;
+  font-size: 1.5rem;
+}
